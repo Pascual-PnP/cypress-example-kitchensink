@@ -10,4 +10,5 @@ test:
     # start the project web server in the background
     - npm run start:ci &
     # run Cypress tests within the GitHub repository
-    - npx cypress run --browser firefox #npm run e2e
+    - npx cypress run --browser firefox 
+    #npm run e2e
