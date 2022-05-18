@@ -15,6 +15,11 @@ if (!process.env.PORT) {
   process.exit(0)
 }
 
+/*
+These are comments to be shown to Alex
+*/
+
+
 // replace both url and port if used in assertions, like
 // expect(location.port).to.eq('8080')
 const defaultPort = 8080
