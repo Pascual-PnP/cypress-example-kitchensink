@@ -9,5 +9,6 @@ if (process.argv.length > 2) cmd += ` ${process.argv.slice(2).join(' ')}`
 
 // eslint-disable-next-line no-console
 console.log(`Running "${cmd}"...`)
-
+// Please delete this comment
+// and this one as well
 execSync(cmd, { stdio: 'inherit' })
