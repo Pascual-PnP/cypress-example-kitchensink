@@ -112,6 +112,7 @@ jobs:
       - name: Cypress tests
         run: |
           npm start &
+          npx cypress run --record --key ${{ secrets.dashboardRecordKey }}        
           npx cypress run --record --parallel --group "Parallel 2x"
         env:
           # place your secret record key at
