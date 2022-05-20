@@ -100,4 +100,4 @@ blocks:
         - name: Cypress E2E
           parallelism: 3
           commands:
-            - npx cypress run --record --parallel --group "Semaphore 3x"
+            #- npx cypress run --record --parallel --group "Semaphore 3x"
