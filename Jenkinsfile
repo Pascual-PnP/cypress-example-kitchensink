@@ -64,7 +64,7 @@ pipeline {
 
     // this stage runs end-to-end tests, and each agent uses the workspace
     // from the previous stage
-    stage('cypress sequential tests') {
+    stage('cypress parallel tests') {
       environment {
         // we will be recording test results and video on Cypress dashboard
         // to record we need to set an environment variable
@@ -87,7 +87,7 @@ pipeline {
             sh "npm run e2e:record:main"
          }
         }
-/*
+
         // second tester runs the same command
         stage('tester B') {
           steps {
@@ -95,7 +95,6 @@ pipeline {
             sh "npm run e2e:record:checks"
           }
         }
-        */
       }
 
     }
