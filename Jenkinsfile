@@ -64,7 +64,7 @@ pipeline {
 
     // this stage runs end-to-end tests, and each agent uses the workspace
     // from the previous stage
-    stage('cypress parallel tests') {
+    stage('cypress sequential tests') {
       environment {
         // we will be recording test results and video on Cypress dashboard
         // to record we need to set an environment variable
