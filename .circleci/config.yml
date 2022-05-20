@@ -177,8 +177,8 @@ workflows:
           requires:
             - Mac install
           record: true
-          parallel: true
-          parallelism: 2
+          parallel: false #true
+          #parallelism: 2
           start: 'npm run start'
           group: 'Mac build'
 
@@ -223,8 +223,8 @@ workflows:
           requires:
             - Linux install
           record: true # record results on Cypress dashboard
-          parallel: true # load balance all tests
-          parallelism: 3 # across 3 machines
+          parallel: false #true # load balance all tests
+          #parallelism: 3 # across 3 machines
           group: '3x-electron on CircleCI' # name this group
           start: 'npm run start' # start server before running tests
 
@@ -240,8 +240,8 @@ workflows:
           # use browser "chrome" for running tests
           browser: chrome
           record: true
-          parallel: true
-          parallelism: 2
+          parallel: false #true
+          #parallelism: 2
           group: '2x-chrome on CircleCI'
           start: 'npm run start'
 
@@ -256,8 +256,8 @@ workflows:
           # use browser "chrome" for running tests
           browser: firefox
           record: true
-          parallel: true
-          parallelism: 2
+          parallel: false #true
+          #parallelism: 2
           group: '2x-firefox on CircleCI'
           start: 'npm run start'
 
